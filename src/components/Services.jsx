@@ -35,42 +35,17 @@ export default function Services() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        {/* Editorial Header */}
-        <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-16 sm:mb-24 gap-8">
-          <div className="max-w-2xl">
-            <motion.div 
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="inline-flex items-center gap-2 mb-6"
-            >
-              <span className="w-8 h-[1px] bg-slate-400" />
-              <span className="text-xs font-mono font-bold uppercase tracking-widest text-slate-500">
-                Our Core Offerings
-              </span>
-            </motion.div>
-            
-            <motion.h2 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-4xl sm:text-5xl lg:text-[4rem] font-extrabold text-slate-900 tracking-[-0.04em] leading-[1.05] font-['Plus_Jakarta_Sans',sans-serif]"
-            >
-              We engineer <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-900 via-slate-700 to-slate-500">
-                digital excellence.
-              </span>
-            </motion.h2>
-          </div>
-
-          <motion.p 
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="text-lg text-slate-500 max-w-sm leading-relaxed"
-          >
+        {/* Section Header */}
+        <div className="flex flex-col items-center text-center mb-16">
+          <span className="text-xs font-bold uppercase tracking-widest text-blue-600 bg-blue-50 border border-blue-100 px-3 py-1 rounded-full mb-3">
+            Our Core Offerings
+          </span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
+            We Engineer Digital Excellence
+          </h2>
+          <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl">
             End-to-end software development services crafted with modern technology stacks and designed for unparalleled business performance.
-          </motion.p>
+          </p>
         </div>
 
         {/* Interactive Awwwards List / Grid */}
